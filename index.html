@@ -17,30 +17,34 @@
     fbq('init', '1456700539322729'); 
     fbq('track', 'PageView');
     </script>
+
     <style>
         body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #1a0a2e; color: #fff; margin: 0; text-align: center; }
         .header { background-color: #0d041a; padding: 20px; text-align: left; border-bottom: 1px solid #2d134d; }
-        .logo { font-size: 1.8em; font-weight: bold; color: #fff; margin-left: 5%; letter-spacing: 2px; }
+        .logo { font-size: 1.5em; font-weight: bold; color: #fff; margin-left: 5%; letter-spacing: 2px; }
         .hero { padding: 60px 20px; background: radial-gradient(circle, #2d134d 0%, #1a0a2e 100%); }
-        h1 { font-size: 2.5em; max-width: 900px; margin: 0 auto 20px; line-height: 1.2; }
+        h1 { font-size: 2.2em; max-width: 900px; margin: 0 auto 20px; line-height: 1.2; text-transform: uppercase; }
         .highlight { color: #d4af37; font-weight: bold; }
-        .main-img { max-width: 550px; width: 90%; margin: 30px auto; display: block; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5)); }
-        .btn-buy { background-color: #d4af37; color: #1a0a2e; padding: 22px 50px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.3em; display: inline-block; margin: 30px 0; transition: 0.3s; box-shadow: 0 4px 15px rgba(212,175,55,0.3); }
-        .btn-buy:hover { transform: scale(1.05); background-color: #f1c40f; }
-        
-        /* Sección de Iconos */
+        .main-img { max-width: 550px; width: 95%; margin: 30px auto; display: block; filter: drop-shadow(0 10px 30px rgba(0,0,0,0.6)); border-radius: 15px; }
+        .btn-buy { background-color: #d4af37; color: #1a0a2e; padding: 22px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.2em; display: inline-block; margin: 30px 0; transition: 0.3s; box-shadow: 0 10px 20px rgba(212,175,55,0.4); }
+        .btn-buy:hover { background-color: #f1c40f; transform: scale(1.05); }
+
+        .gallery-section { padding: 60px 10px; background-color: #fff; color: #1a0a2e; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; max-width: 1000px; margin: 30px auto; }
+        .gallery-item { border-radius: 10px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+        .gallery-item img { width: 100%; height: auto; display: block; }
+
         .features-section { background-color: #f9f9f9; color: #333; padding: 70px 20px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; max-width: 1100px; margin: 40px auto; }
         .card { background: #fff; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #eee; }
-        .card img { width: 80px; height: 80px; margin-bottom: 20px; }
-        .card h3 { font-size: 1.1em; color: #1a0a2e; margin-bottom: 10px; }
-        .card p { font-size: 0.9em; color: #666; line-height: 1.5; }
+        .card img { width: 70px; height: 70px; margin-bottom: 20px; }
 
-        /* CIERRE DE PÁGINA (FOOTER) */
-        footer { background-color: #0d041a; color: #777; padding: 50px 20px; font-size: 0.85em; border-top: 1px solid #222; }
-        .footer-links { margin-bottom: 20px; }
-        .footer-links a { color: #999; text-decoration: none; margin: 0 15px; }
-        .disclaimer { max-width: 800px; margin: 20px auto; line-height: 1.6; }
+        .guarantee { background-color: #fff; padding: 40px 20px; }
+        .guarantee-box { max-width: 700px; margin: auto; border: 2px dashed #d4af37; padding: 30px; border-radius: 20px; color: #333; }
+
+        .cta-final { padding: 80px 20px; background: radial-gradient(circle, #2d134d 0%, #1a0a2e 100%); }
+        
+        footer { background-color: #0d041a; color: #777; padding: 60px 20px; font-size: 0.8em; border-top: 1px solid #222; }
     </style>
 </head>
 <body>
@@ -50,59 +54,70 @@
     </div>
 
     <section class="hero">
-        <h1>DESBLOQUEA TU PODER DE <span class="highlight">MANIFESTACIÓN DEFINITIVO:</span> PACK PLR EXCLUSIVO</h1>
-        
-        <img src="Mockups - Manifestación (2).jpg" alt="Pack de Manifestación" class="main-img">
+        <h1>DESBLOQUEA TU PODER DE <span class="highlight">MANIFESTACIÓN:</span> PACK EXCLUSIVO</h1>
+        <img src="pack.jpg" alt="Pack de Manifestación" class="main-img">
+        <p style="font-size: 1.2em; color: #ccc; max-width: 750px; margin: auto;">7 Productos esenciales + 5 bonos exclusivos listos para transformar tu mentalidad.</p>
+        <a href="https://pay.hotmart.com/W105135112Y" class="btn-buy" onclick="fbq('track', 'InitiateCheckout');">✨ OBTENER TODO EL PACK AHORA ✨</a>
+    </section>
 
-        <p style="font-size: 1.2em; color: #ccc; max-width: 700px; margin: auto;">
-            7 Productos esenciales + 5 bonos exclusivos listos para usar, aprender y revender con licencia PLR incluida.
-        </p>
-
-        <a href="https://pay.hotmart.com/W105135112Y" class="btn-buy" onclick="fbq('track', 'InitiateCheckout');">
-            ✨ OBTENER MI PACK AHORA ✨
-        </a>
+    <section class="gallery-section">
+        <h2>LO QUE VAS A RECIBIR HOY</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="pagina_1.png"></div>
+            <div class="gallery-item"><img src="pagina_2.png"></div>
+            <div class="gallery-item"><img src="pagina_3.png"></div>
+            <div class="gallery-item"><img src="pagina_4.png"></div>
+            <div class="gallery-item"><img src="pagina_5.png"></div>
+        </div>
     </section>
 
     <section class="features-section">
-        <h2 style="color: #1a0a2e; font-size: 2.2em;">LO QUE INCLUYE TU PACK</h2>
-        
         <div class="grid">
             <div class="card">
-                <img src="https://img.icons8.com/color/96/gift.png" alt="Regalo">
-                <h3>7 PRODUCTOS ESENCIALES</h3>
-                <p>Todo el material necesario para tu transformación personal.</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1162/1162263.png">
+                <h3>7 PRODUCTOS CLAVE</h3>
+                <p>Ebooks y guías paso a paso para dominar la ley de atracción.</p>
             </div>
             <div class="card">
-                <img src="https://img.icons8.com/color/96/notebook.png" alt="Planificador">
-                <h3>LEY DE ATRACCIÓN</h3>
-                <p>Planificadores diseñados para enfocar tu energía diaria.</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/2645/2645853.png">
+                <h3>PLANIFICADORES</h3>
+                <p>Organiza tu rutina diaria para vibrar en abundancia constante.</p>
             </div>
             <div class="card">
-                <img src="https://img.icons8.com/color/96/meditation.png" alt="Afirmaciones">
-                <h3>AFIRMACIONES DE ABUNDANCIA</h3>
-                <p>Reprograma tu subconsciente con decretos de poder.</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/3048/3048398.png">
+                <h3>DECRETOS DE PODER</h3>
+                <p>Afirmaciones seleccionadas para reprogramar tu mente financiera.</p>
             </div>
             <div class="card">
-                <img src="https://img.icons8.com/color/96/vision-board.png" alt="Vision Board">
-                <h3>TABLERO DE VISIÓN</h3>
-                <p>Material visual para materializar tus sueños con claridad.</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1584/1584892.png">
+                <h3>MAPA DE SUEÑOS</h3>
+                <p>Crea tu tablero de visión y materializa tus objetivos con claridad.</p>
             </div>
+        </div>
+    </section>
+
+    <section class="guarantee">
+        <div class="guarantee-box">
+            <h3>🔒 Compra 100% Protegida</h3>
+            <p>Acceso automático a tu correo para descargar todo el material. Soporte de Enigma Visual.</p>
+        </div>
+    </section>
+
+    <section class="cta-final">
+        <h2 style="color: #fff; margin-bottom: 20px;">¿LISTO PARA EMPEZAR TU CAMBIO?</h2>
+        <p style="color: #ccc; margin-bottom: 30px;">Obtén acceso instantáneo por un precio especial hoy.</p>
+        <a href="https://pay.hotmart.com/W105135112Y" class="btn-buy" onclick="fbq('track', 'InitiateCheckout');">✨ SÍ, QUIERO EL PACK COMPLETO ✨</a>
+        <div style="margin-top: 30px;">
+            <img src="https://help.hotmart.com/hc/article_attachments/115001550211/pagamentos_icones.png" style="max-width: 300px; filter: brightness(0) invert(1); opacity: 0.8;">
         </div>
     </section>
 
     <footer>
-        <div class="footer-links">
-            <a href="#">Términos y Condiciones</a> | 
-            <a href="#">Políticas de Privacidad</a> | 
-            <a href="#">Contacto</a>
-        </div>
-        
-        <p class="disclaimer">
-            Este sitio no forma parte del sitio web de Facebook o Facebook Inc. Además, este sitio NO está respaldado por Facebook de ninguna manera. FACEBOOK es una marca registrada de FACEBOOK, Inc.
+        <p style="color: #555; max-width: 800px; margin: auto; padding-bottom: 20px;">
+            Este sitio no forma parte de Facebook. FACEBOOK es una marca registrada de FACEBOOK, Inc.
         </p>
-
-        <p>© 2026 ENIGMA VISUAL - Todos los derechos reservados.</p>
-        <p style="font-size: 0.8em; margin-top: 10px; color: #444;">Arache, Córdoba - Colombia</p>
+        <p><strong>ENIGMA VISUAL</strong></p>
+        <p>© 2026 Todos los derechos reservados. Montería, Córdoba.</p>
     </footer>
 
 </body>
